@@ -27,7 +27,35 @@
     </dependency>
   </dependencies>
 
-  <build>
+<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-43-221.us-east-2.compute.internal-snapshots</name>
+        <url>http://3.138.189.208:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-43-221.us-east-2.compute.internal-releases</name>
+        <url>http://3.138.189.208:8081/artifactory/libs-release-local</url>
+    </repository>
+</distributionManagement>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
